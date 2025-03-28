@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    transition: background-color 0.5s, color 0.5s; /* Transição suave */
+    transition: background-color 0.5s, color 0.5s;
 }
 
 body {
-    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Cor padrão */
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
@@ -108,7 +108,6 @@ footer {
     transition: background-color 0.5s;
 }
 
-/* Animações */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
