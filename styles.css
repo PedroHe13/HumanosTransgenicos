@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s, color 0.5s; /* Transição suave */
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Cor padrão */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #00796b;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#topics h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #004d40;
+    margin-bottom: 30px;
+}
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.topic-btn {
+    background: #26a69a;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topic-btn:hover {
+    transform: translateY(-5px);
+    background: #00695c;
+}
+
+.description-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 300px;
+    animation: slideUp 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.5s;
+}
+
+.description-box h3 {
+    color: #00796b;
+    margin-bottom: 10px;
+    transition: color 0.5s;
+}
+
+.description-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #004d40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    header h1 { font-size: 2em; }
+    .topic-btn { font-size: 1em; }
+    .description-box img { max-height: 150px; }
+}
